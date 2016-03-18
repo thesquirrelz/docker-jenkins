@@ -48,7 +48,7 @@ ENV JENKINS_UC https://updates.jenkins-ci.org
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 
 # for main web interface:
-EXPOSE 8080
+EXPOSE 8000
 
 # will be used by attached slave agents:
 EXPOSE 50000
