@@ -49,6 +49,7 @@ RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 
 # for main web interface:
 EXPOSE 8000
+ENV JENKINS_OPTS --httpPort=8000
 
 # will be used by attached slave agents:
 EXPOSE 50000
